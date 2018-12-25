@@ -1,0 +1,29 @@
+.nav-container {
+  background-color: lightseagreen;
+  overflow: hidden;
+}
+
+.nav-container a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 36px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav-container a:hover {
+  background-color: #ddd;
+  color: orchid;
+}
+
+/* Add a color to the active/current link */
+/*.nav-container a.active {
+  background-color: #4CAF50;
+  color: cadetblue;
+}*/
+
+.topnav-right {
+  float: right;
+}
