@@ -13,6 +13,9 @@ class RootContainer extends React.Component{
 
     render(){
         return <Switch>
+            <Route exact path={'/'} render = {(props) =>{
+                return <RootComponent {...this.props}/>
+            }}/>
             <Route exact path={'/Home'} render = {(props) =>{
                        return <RootComponent {...this.props}/>
                    }}/>
