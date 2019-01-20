@@ -1,18 +1,20 @@
 import React from 'react';
 import {withRouter, Switch,Route} from 'react-router-dom';
-import RegistrationComponent from './component';
+import RegisterComponent from './component';
 
-class RegistrationContainer extends React.Component{
+class RegisterContainer extends React.Component{
+
+
     render(){
         return <Switch>
             <Route path={`${this.props.match.url}`}
                    render = {(props) =>{
-                       return <RegistrationComponent {...this.props}/>
+                       return <RegisterComponent {...this.props}/>
                    }}/>
         </Switch>
     }
 }
 
-let CompanyRegistrationForm = withRouter(RegistrationContainer);
+let Register = withRouter(RegisterContainer);
 
-export default CompanyRegistrationForm;
+export default Register;

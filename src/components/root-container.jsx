@@ -11,11 +11,11 @@ import Home from './Home/container';
 class RootContainer extends React.Component{
     render(){
         return <Switch>
-            <Route exact path={`${this.props.match.url}`} render = {(props) =>{
-                       return <RootComponent component={Home} {...this.props}/>
-                   }}/>
-            <Route path={'/Home'} render = {(props) =>{
-                       return <RootComponent component={Home} {...this.props}/>
+            <Route exact path={'/'} render = {(props) =>{
+                return <RootComponent {...this.props}/>
+            }}/>
+            <Route exact path={'/Home'} render = {(props) =>{
+                       return <RootComponent {...this.props}/>
                    }}/>
             <Route path={'/aboutus'} render = {(props) =>{
                 return <RootComponent component={AboutUs} {...this.props}/>
