@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+/.sass-cache
+*.css
+*.css.map
+
 # production
 /build
 

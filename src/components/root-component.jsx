@@ -4,16 +4,24 @@ import Home from './Home/container';
 import Nav from './Nav/container';
 import Footer from './footer/container';
 
-
-
 export default class RootComponent extends React.Component{
-    render (){
+    state ={
+        component:Home
+    }
+    componentWillMount =()=>{
+        this.setState({component:this.props.component||Home})
+    }
+    componentWillReceiveProps =(props)=>{
+        
+        this.setState({component:props.component||Home})
+    }
+    render (){  
         return <div className="container-fluid root-container">
             <div className="row top-nav-row">
                 <Nav/>
             </div>
             <div className="row body-row">
-                <Home />
+                <this.state.component />
             </div>
             <div className="row footer-row">
                 <Footer />

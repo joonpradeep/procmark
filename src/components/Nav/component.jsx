@@ -10,8 +10,9 @@ export default class NavComponent extends React.Component{
                 <NavLink to="/Home">Home</NavLink>
                 <NavLink to="/aboutus">AboutUs</NavLink>
                 <NavLink to="/Testimonials">Testimonials</NavLink>
-                <NavLink to="/Services">Services</NavLink>
+                <NavLink to="/Services">Product&Services</NavLink>
                 <NavLink to="/ContactUs">ContactUs</NavLink>
+                <NavLink to="/admin">Admin</NavLink>
                     <div className="topnav-right">
                             <NavLink to="/Register">Register</NavLink>
                             <NavLink to="/Login">Login</NavLink>

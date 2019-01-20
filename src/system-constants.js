@@ -1,0 +1,1 @@
+export const COMMON_SERVICE_ENDPOINT='http://localhost:8080/common';

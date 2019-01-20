@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter} from "react-router-dom";
+import  '../node_modules/bootstrap/dist/css/bootstrap.css';
+import * as boot from 'bootstrap';
 import './index.css';
 import Root from './components/root-container';
 import * as serviceWorker from './serviceWorker';
