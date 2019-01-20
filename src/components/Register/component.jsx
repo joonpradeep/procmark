@@ -1,8 +1,6 @@
 import React, {Fragment} from 'react';
 import '../../../node_modules/react-selectize/themes/index.css'
 import './register.css';
-import Nav from "../Nav/container";
-import Footer from "../footer/container";
 import {
 Grid,
 Typography,
@@ -22,7 +20,7 @@ export default class HomeComponent extends React.Component {
             return {label: sector.name, value: sector.id}
         });
 
-        return <div className='registerForm'><Nav/>
+        return <div className='registerForm'>
             <Fragment>
                 <Typography variant="title" gutterBottom style={{textAlign: 'center'}}>
                     Company Registration Form
@@ -86,7 +84,7 @@ export default class HomeComponent extends React.Component {
                     </Grid>
                 </Grid>
             </Fragment>
-            <Footer/>
+         
         </div>
     }
 }
